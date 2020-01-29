@@ -1,0 +1,4 @@
+com/learning/bikes/models/Bike.class
+com/learning/bikes/repositories/BikeRepository.class
+com/learning/bikes/controllers/BikesController.class
+com/learning/bikes/BikesApplication.class
