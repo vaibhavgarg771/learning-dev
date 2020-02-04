@@ -17,3 +17,5 @@
 ./bike/bikes/.springBeans
 ./bike/bikes/.sts4-cache
 ./bike/bikes/.DS_Store
+
+**/*.class
