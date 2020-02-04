@@ -1,9 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 import { BikeService } from 'src/app/services/bike.service';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { throwError } from 'rxjs';
 
 @Component({
-    selector:'home-page', 
     templateUrl:'./home.component.html'
 })
 
@@ -32,5 +32,23 @@ export class HomeComponent implements OnInit{
             purchaseDate: new FormControl('', Validators.required), 
             contact: new FormControl(), 
         })
+    }
+
+    submitRegistration(){
+        if (this.bikeForm.valid){
+            this.validMessage = "your bike registration has been submitted successfully, Thank you";
+            this.bikeService.createBikeRegistration(this.bikeForm.value).subscribe(
+                data => {
+                    this.bikeForm.reset(); 
+                    return true;
+                }, 
+                error => {
+                    return throwError(error);
+                }
+            )
+        }
+        else {
+            this.validMessage = "Please fill out the complete form and try again :) ";
+        }
     }
 }

@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { IBike } from './bike.model';
 
 const httpOptions = {
-  headers: new HttpHeaders({'Contect-Type': 'application/json'})
+  headers: new HttpHeaders({'Content-Type': 'application/json'})
 }
 @Injectable({
   providedIn: 'root'
@@ -21,6 +21,7 @@ export class BikeService {
   }
 
   createBikeRegistration(bike: IBike){
+    bike.contact = true;
     let body = JSON.stringify(bike);
     return this.http.post('server/api/v1/bikes', body, httpOptions);
   }

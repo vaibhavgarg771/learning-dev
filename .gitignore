@@ -19,3 +19,4 @@
 ./bike/bikes/.DS_Store
 
 **/*.class
+**/*.db
