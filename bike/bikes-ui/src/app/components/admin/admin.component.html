@@ -7,7 +7,7 @@
             <th class="text-right">purchase Price</th>
         </tr>
         <tr *ngFor="let bike of bikes">
-            <td>{{bike.name}}</td>
+            <td><a [routerLink]="['/admin/view', bike.id]">{{bike.name}}</a> </td>
             <td>{{bike.email}}</td>
             <td>{{bike.model}}</td>
             <td>{{bike.purchasePrice}}</td>
