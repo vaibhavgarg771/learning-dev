@@ -9,6 +9,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { HomeComponent } from './components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ViewRegistrationComponent } from './components/view-registration/view-registration.component';
+import { CallbackComponent } from './components/callback/callback.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ViewRegistrationComponent } from './components/view-registration/view-r
     AdminComponent,
     HomeComponent,
     ViewRegistrationComponent,
+    CallbackComponent,
   ],
   imports: [
     ReactiveFormsModule,
