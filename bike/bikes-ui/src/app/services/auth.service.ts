@@ -8,9 +8,9 @@ export class AuthService{
     constructor(private router: Router){}
 
     auth0 = new auth0.WebAuth({
-        clientID: 'ddCwxfStLDcNPNq6AtNb7xAbzcxOfmbl', 
-        domain: 'vg771.au.auth0.com', 
-        responseType: '', 
+        clientID: '<Your cliend Id>', 
+        domain: '<your domain>', 
+        responseType: 'token id_token', 
         audience: 'http://localhost:8080', 
         redirectUri: 'http://localhost:4200/callback', 
         scope: 'openid view:registration view:registrations'
