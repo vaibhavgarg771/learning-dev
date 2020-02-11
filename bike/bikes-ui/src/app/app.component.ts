@@ -12,4 +12,8 @@ export class AppComponent {
   constructor(private authService: AuthService){
     authService.handleAuthentication();
   }
+
+  logout():void {
+    this.authService.logout();
+  }
 }

@@ -1,4 +1,8 @@
-# BikesUi
+##Project done with Pluralsight course "Spring Boot and angular"
+
+using Spring Boot and Angular I tried to implement OAuth provided by Auth0 (but failed). The end result is I am unable to login as it is showing me a "403 forbidden" errror. Apart from that rest of the functioning is working if I go for the 'permitAll()' option on my Spring API configuration
+
+## BikesUi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
 
